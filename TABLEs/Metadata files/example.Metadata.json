@@ -38,7 +38,7 @@
       "DATETIME_PRECISION": null,
       "EXTRA": "",
       "GENERATION_EXPRESSION": "",
-      "IS_NULLABLE": "YES",
+      "IS_NULLABLE": "NO",
       "NUMERIC_PRECISION": null,
       "NUMERIC_SCALE": null,
       "obj": "example",
