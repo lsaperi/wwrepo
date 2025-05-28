@@ -1,0 +1,158 @@
+{
+  "Column": [
+    {
+      "CHARACTER_MAXIMUM_LENGTH": 255,
+      "CHARACTER_OCTET_LENGTH": 1020,
+      "CHARACTER_SET_NAME": "utf8mb4",
+      "COLLATION_NAME": "utf8mb4_0900_ai_ci",
+      "COLUMN_COMMENT": "",
+      "COLUMN_DEFAULT": null,
+      "COLUMN_KEY": "UNI",
+      "COLUMN_NAME": "email",
+      "COLUMN_TYPE": "varchar(255)",
+      "DATA_TYPE": "varchar",
+      "DATETIME_PRECISION": null,
+      "EXTRA": "",
+      "GENERATION_EXPRESSION": "",
+      "IS_NULLABLE": "YES",
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null,
+      "obj": "clients",
+      "ORDINAL_POSITION": 2,
+      "PRIVILEGES": "select,insert,update,references",
+      "SRS_ID": null,
+      "TABLE_CATALOG": "def",
+      "type": "TABLE"
+    },
+    {
+      "CHARACTER_MAXIMUM_LENGTH": null,
+      "CHARACTER_OCTET_LENGTH": null,
+      "CHARACTER_SET_NAME": null,
+      "COLLATION_NAME": null,
+      "COLUMN_COMMENT": "",
+      "COLUMN_DEFAULT": null,
+      "COLUMN_KEY": "PRI",
+      "COLUMN_NAME": "id",
+      "COLUMN_TYPE": "int",
+      "DATA_TYPE": "int",
+      "DATETIME_PRECISION": null,
+      "EXTRA": "auto_increment",
+      "GENERATION_EXPRESSION": "",
+      "IS_NULLABLE": "NO",
+      "NUMERIC_PRECISION": 10,
+      "NUMERIC_SCALE": 0,
+      "obj": "clients",
+      "ORDINAL_POSITION": 1,
+      "PRIVILEGES": "select,insert,update,references",
+      "SRS_ID": null,
+      "TABLE_CATALOG": "def",
+      "type": "TABLE"
+    },
+    {
+      "CHARACTER_MAXIMUM_LENGTH": 100,
+      "CHARACTER_OCTET_LENGTH": 400,
+      "CHARACTER_SET_NAME": "utf8mb4",
+      "COLLATION_NAME": "utf8mb4_0900_ai_ci",
+      "COLUMN_COMMENT": "",
+      "COLUMN_DEFAULT": null,
+      "COLUMN_KEY": "",
+      "COLUMN_NAME": "name",
+      "COLUMN_TYPE": "varchar(100)",
+      "DATA_TYPE": "varchar",
+      "DATETIME_PRECISION": null,
+      "EXTRA": "",
+      "GENERATION_EXPRESSION": "",
+      "IS_NULLABLE": "YES",
+      "NUMERIC_PRECISION": null,
+      "NUMERIC_SCALE": null,
+      "obj": "clients",
+      "ORDINAL_POSITION": 3,
+      "PRIVILEGES": "select,insert,update,references",
+      "SRS_ID": null,
+      "TABLE_CATALOG": "def",
+      "type": "TABLE"
+    }
+  ],
+  "Constraints": [
+    {
+      "CHECK_CLAUSE": null,
+      "Columns": [
+        {
+          "COLUMN_NAME": "id",
+          "CONSTRAINT_CATALOG": "def",
+          "CONSTRAINT_NAME": "PRIMARY",
+          "ORDINAL_POSITION": 1,
+          "POSITION_IN_UNIQUE_CONSTRAINT": null,
+          "REFERENCED_COLUMN_NAME": null,
+          "REFERENCED_TABLE_NAME": null,
+          "REFERENCED_TABLE_SCHEMA": null,
+          "TABLE_NAME": "clients"
+        }
+      ],
+      "CONSTRAINT_CATALOG": "def",
+      "CONSTRAINT_NAME": "PRIMARY",
+      "CONSTRAINT_TYPE": "PRIMARY KEY",
+      "DELETE_RULE": null,
+      "ENFORCED": "YES",
+      "obj": "clients",
+      "type": "TABLE",
+      "UPDATE_RULE": null
+    },
+    {
+      "CHECK_CLAUSE": null,
+      "Columns": [
+        {
+          "COLUMN_NAME": "email",
+          "CONSTRAINT_CATALOG": "def",
+          "CONSTRAINT_NAME": "unique_email",
+          "ORDINAL_POSITION": 1,
+          "POSITION_IN_UNIQUE_CONSTRAINT": null,
+          "REFERENCED_COLUMN_NAME": null,
+          "REFERENCED_TABLE_NAME": null,
+          "REFERENCED_TABLE_SCHEMA": null,
+          "TABLE_NAME": "clients"
+        }
+      ],
+      "CONSTRAINT_CATALOG": "def",
+      "CONSTRAINT_NAME": "unique_email",
+      "CONSTRAINT_TYPE": "UNIQUE",
+      "DELETE_RULE": null,
+      "ENFORCED": "YES",
+      "obj": "clients",
+      "type": "TABLE",
+      "UPDATE_RULE": null
+    }
+  ],
+  "General": [
+    {
+      "AUTO_INCREMENT": 1,
+      "AVG_ROW_LENGTH": 0,
+      "CREATE_OPTIONS": "",
+      "MAX_DATA_LENGTH": 0,
+      "obj": "clients",
+      "TABLE_COLLATION": "utf8mb4_0900_ai_ci",
+      "TABLE_COMMENT": "",
+      "type": "TABLE"
+    }
+  ],
+  "Indexes": [
+    {
+      "Columns": [
+        {
+          "COLLATION": "A",
+          "COLUMN_NAME": "email",
+          "INDEX_NAME": "unique_email",
+          "obj": "clients",
+          "SEQ_IN_INDEX": 1
+        }
+      ],
+      "INDEX_NAME": "unique_email",
+      "INDEX_TYPE": "BTREE",
+      "IS_VISIBLE": "YES",
+      "NON_UNIQUE": 0,
+      "obj": "clients",
+      "TABLE_CATALOG": "def",
+      "type": "TABLE"
+    }
+  ]
+}
