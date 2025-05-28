@@ -1,0 +1,12 @@
+[
+  {
+    "schema": "",
+    "name": "books",
+    "type": "TABLE"
+  },
+  {
+    "schema": "",
+    "name": "orders",
+    "type": "TABLE"
+  }
+]
